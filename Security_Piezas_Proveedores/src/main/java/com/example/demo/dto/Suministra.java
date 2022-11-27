@@ -13,7 +13,8 @@ import javax.persistence.ManyToOne;
 @Table(name = "suministra")
 public class Suministra {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)//
+	@Column(name = "id")
 	private int id;
 	
 	//YA QUE ES UNA TABLA RELACIÓN RECIBE CLAVES VALORES FORÁNEAS, DECLARAMOS COMO ATRIBUTOS A ESAS ENTIDADES
